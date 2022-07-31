@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лестницы на заказ</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat+Alternates:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+    <!--header-->
+
+    <header class="header">
+        <div class="container  header-container">
+          <div class="header__wrapper flex">
+              <a href="#" class="header__logo">
+                <img src="svg/logo.svg" alt="Логотип - Весёлый лестничник">
+              </a>
+             <nav class="header__nav">
+          <ul class="header__nav-list flex list-reset">
+            <li class="header__nav-item">
+              <a href="#types" class="link-style underline-one">Лестницы</a>
+              <span class="link__popup"></span>
+            </li>
+            <li class="header__nav-item">
+              <a href="#company" class="link-style underline-one">О компании</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#gallery" class="link-style underline-one">Наши работы</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#survey" class="link-style underline-one">Расчёт стоимости</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#contacts" class="link-style underline-one">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+        </div>
+      
+        <div class="header-contacts flex">
+          <ul class="contacts_list">
+            <li class="contacts_item list-reset">
+              <a href="tel:+79999999999" class="link-style underline-one">+7(999)999-99-99</a>
+            </li>
+            <li class="contacts_item list-reset">
+              <a href="mailto:#" class="link-style underline-one">mail@yandex.ru</a>
+            </li>
+          </ul>
+          <ul class="contacts_list flex">
+            <li class="list-reset link-style header-contacts__icon">
+              <a href="#">
+                <img src="img/whatsapp.svg" alt="whatsapp" class="header-contacts__whatsapp-icon">
+              </a>
+            </li>
+            <li class="list-reset link-style header-contacts__icon">
+              <a href="#">
+                <img src="img/instagram.svg" alt="instagram" class="header-contacts__instagram-icon">
+              </a>
+            </li>
+          </ul>
+      </div>
+      
+    </div>
+    </div>
+
+    </header>
+    <!--main-->
+
+    <!--main-banner-->
+
+    <main class="main">
+      
+      <section class="hero">
+        <div class="container hero-container">
+        <div class="hero__block flex">
+          <h1 class="hero__title">Все виды лестниц качественно и&nbsp;по&nbsp;доступным ценам</h1>
+          <p class="hero__description">Подберем и рассчитаем 3 варианта лестниц под ваш интерьер бесплатно</p>
+          <button class="hero__btn btn">Получить варианты</button>
+          
+            <!--<form class="form flex" method="post">
+              <input class="form__input" type="text" name="name" required placeholder="Введите имя">
+              <input class="form__input" type="tel" name="tel" required placeholder="Введите телефон">
+              <button class="form__btn transition" type="submit" >Получить консультацию</button>
+            </form>-->
+        </div>
+         
+           
+          <div class="hero__prize flex">
+            <button class="open-prize custom-btn btn-5">Каталог подарков</button>
+            <img src="img/prize.svg" class="hero__prize-picture" alt="Подарок">
+            <!--<p class="hero__prize-description">При офорлении заказа много подарков от&nbsp;нас и&nbsp;наших партнеров!</p>-->
+          </div>
+
+          </div>
+          
+  </section>
+
+      <!--section-types-->
+
+      <section id="types" class="section-types">
+        <div class="container section-types__container">
+        <h2 class="section-types__title title-style">Виды лестниц</h2>
+        <div class="types-one">
+        <h3 class="section-types__title">По типу конструкции</h3>
+        <ul class="types-one__list flex list-reset">
+          <li class="types-one__item">
+            <p class="types-one__type">Прямая</p>
+            <img src="img/001.jpg" alt="Фото лестницы" class="types-one__foto">
+          </li>
+          <li class="types-one__item">
+            <p class="types-one__type">П-образная</p>
+            <div class="types-one__size"><img src="img/002.jpg" alt="Фото лестницы" class="types-one__foto"></div>
+            </li>
+          <li class="types-one__item">
+            <p class="types-one__type">Г-образная</p>
+            <div class="types-one__size"><img src="img/003.jpg" alt="Фото лестницы" class="types-one__foto"></div>
+          </li>
+          <li class="types-one__item">
+            <p class="types-one__type">Винтовая</p>
+            <div class="types-one__size"><img src="img/004.jpg" alt="Фото лестницы" class="types-one__foto"></div>
+          </li>
+          <li class="types-one__item">
+            <p class="types-one__type">Поворотная</p>
+            <div class="types-one__size"><img src="img/005.jpg" alt="Фото лестницы" class="types-one__foto"></div>
+          </li>
+        </ul>
+        </div>
+        <div class="types-two__block flex">
+        <div class="types-two__element flex">
+        <h3 class="types-two__title">По виду каркаса</h3>
+        <ul class="types-two__list list-reset">
+          <li class="types-two__item">
+            <span class="types-two_desc">металлический - двойной ломаный косоур</span>
+            <div class="types-frame">
+              <img class="types-frame_img" src="img/frame1.jpg" alt="Фото каркаса">
+            </div>
+          </li>
+          <li class="types-two__item">
+            <span class="types-two_desc">металлический- монокосоур</span>
+            <div class="types-frame">
+              <img class="types-frame_img" src="img/frame2.jpg" alt="Фото каркаса">
+            </div>
+          </li>
+          <li class="types-two__item">
+            <span class="types-two_desc">тетива из листа</span>
+            <div class="types-frame">
+              <img class="types-frame_img" src="img/frame3.jpg" alt="Фото каркаса">
+            </div>
+          </li>
+        </ul>
+        </div>
+        <div class="types-two__element types-two__element__center flex">
+          <h3 class="section-types__title section-types__title__center">По материалу ступеней</h3>
+          <ul class="types-two__list types-two__list__center flex list-reset flex">
+            <li class="types-two__item types-two__item__center">Массив дуба</li>
+            <li class="types-two__item types-two__item__center">Массив ясеня</li>
+            <li class="types-two__item types-two__item__center">Массив бука</li>
+            <li class="types-two__item types-two__item__center">Массив лиственницы</li>
+            <li class="types-two__item types-two__item__center">Массив берёзы</li>
+            <li class="types-two__item types-two__item__center">Массив сосны</li>
+            <li class="types-two__item types-two__item__center">Закалённое стекло</li>
+            <li class="types-two__item types-two__item__center">Комбинированные</li>
+          </ul>
+          </div>
+        <div class="types-two__element flex">
+        <h3 class="section-types__title">По материалу ограждения</h3>
+        <ul class="types-two__list flex list-reset">
+          <li class="types-two__item">Деревянное</li>
+          <li class="types-two__item">Кованое</li>
+          <li class="types-two__item">Нержавеющая сталь</li>
+          <li class="types-two__item">Закалённое стекло</li>
+          <li class="types-two__item">Триплекс </li>
+          <li class="types-two__item">Комбинированное</li>
+        </ul>
+       </div>
+        </div>
+        <div class="types-materials">
+          <h3 class="section-types__title">Виды используемого дерева</h3>
+          <ul class="types-materials__list list-reset flex">
+            <li class="types-materials__item">
+              <img src="#" alt="Фото берёзы" class="types-materials__picture">
+              <div class="types-materials__element">
+                <h4 class="types-material-title">Берёза</h4>
+                <p class="types-materials__description"></p>
+              </div>
+            </li>
+            <li class="types-materials__item">
+              <img src="#" alt="Фото дуба" class="types-materials__picture">
+              <div class="types-materials__element">
+                <h4 class="types-material-title">Дуб</h4>
+                <p class="types-materials__description"></p>
+              </div>
+            </li>
+            <li class="types-materials__item">
+              <img src="#" alt="Фото сосны" class="types-materials__picture">
+              <div class="types-materials__element">
+                <h4 class="types-material-title">Сосна</h4>
+                <p class="types-materials__description"></p>
+              </div>
+            </li>
+            <li class="types-materials__item">
+              <img src="#" alt="Фото лиственницы" class="types-materials__picture">
+              <div class="types-materials__element">
+                <h4 class="types-material-title">Лиственница</h4>
+                <p class="types-materials__description"></p>
+              </div>
+            </li>
+            <li class="types-materials__item">
+              <img src="#" alt="Фото ясеня" class="types-materials__picture">
+              <div class="types-materials__element">
+                <h4 class="types-material-title">Ясень</h4>
+                <p class="types-materials__description"></p>
+              </div>
+            </li>
+            <li class="types-materials__item">
+              <img src="#" alt="Фото бука" class="types-materials__picture">
+              <div class="types-materials__element">
+                <h4 class="types-material-title">Бук</h4>
+                <p class="types-materials__description"></p>
+              </div>
+            </li>
+          </ul>
+          <h3 class="section-types__title">Виды используемого стекла</h3>
+        </div>
+      </div>
+      </section>
+      <section id="company" class="company">
+        <h2 class="company-title title-style">О компании</h2>
+      </section>
+
+      <!--section-advantage-->
+
+      <section class="section-advantage">
+        <div class="container">
+        <h2 class="section-advantage__heading title-style">Преимущества работы с нами</h2>
+        <ul class="section-advantage__list flex list-reset">
+          <li class="section-advantage__item flex">
+            <h3 class="section-advantage__title">Индивидуальный проект</h3>            
+            <span class="section-advantage__desc">проект любой сложности</span>
+            <span class="section-advantage__desc">под ваш интерьер</span>
+            <span class="section-advantage__desc">макет лестницы в интерьере бесплатно</span>
+          </li>
+          <li class="section-advantage__item flex">
+            <h3 class="section-advantage__title">Собственное производство</h3>
+            <span class="section-advantage__desc">экологически чистые материалы</span>
+            <span class="section-advantage__desc">подтверждено сертификатами</span>
+            <span class="section-advantage__desc">лучшие породы дерева</span>
+          </li>
+          <li class="section-advantage__item flex">
+            <h3 class="section-advantage__title">Гарантия и опыт</h3>
+            <span class="section-advantage__desc">25 лет опыта в сфере</span>
+            <span class="section-advantage__desc">до 100 лет гарантия</span>
+            <span class="section-advantage__desc"></span>
+          </li>
+          <li class="section-advantage__item flex">
+            <h3 class="section-advantage__title">Сборный каркас</h3>
+            <span class="section-advantage__desc">под любой проём</span>
+            <span class="section-advantage__desc">монтаж без сварки</span>
+            <span class="section-advantage__desc">возможность установки в законченный ремонт</span>
+          </li>  
+          <li class="section-advantage__item flex">
+            <h3 class="section-advantage__title">Возможность самостоятельного монтажа</h3>
+            <span class="section-advantage__desc">каркас состоит из нескольких частей</span>
+            <span class="section-advantage__desc">сборка каркаса до 3-х часов, лестницы до 2-х дней своими силами</span>
+            <span class="section-advantage__desc">экономия на монтаже до 20.000 рублей</span>
+          </li>
+          <li class="section-advantage__item flex">
+            <h3 class="section-advantage__title">Еще больше возможностей</h3>
+            <span class="section-advantage__desc">доставка в любой регион РФ транспортной компанией</span>
+            <span class="section-advantage__desc">рассрочка без переплаты</span>
+            <span class="section-advantage__desc">доступная цена - стоимость ниже, чем у конкурентов</span>
+          </li>
+        </ul>
+      </div>
+      </section>
+      <!--section-servises-->
+<section class="section_complects">
+  <div class="container">
+  <h2 class="section_complects__title title-style">Комплекты под покраску</h2>
+  <p class="section_complects__desc">Описание блока</p>
+  <ul class="section_complects__list flex">
+    <li class="section_complects__item flex">
+      <div class="item_desc-block">
+        <span class="item_desc">ВЛ-1 Деревянная лестница с поворотом на 180 г.</span>
+        <span class="item_desc item_desc__price">Стоимость комплекта</span><span class="prise">53 000 рублей</span>
+      </div>
+      <div class="item_pictures flex">
+        <img src="img/1ss.jpg" class="item_picture" alt="Схема лестницы">
+        <img src="img/1s.jpg" class="item_picture" alt="Лестница в интерьере">
+      </div>
+      <button type="submit" class="section_complects__btn">Узнать подробнее</button>
+    </li>
+    <li class="section_complects__item flex">
+      <div class="item_desc-block">
+        <span class="item_desc">ВЛ-2 Деревянная лестница с поворотом на 360 г.</span>
+        <span class="item_desc item_desc__price">Стоимость комплекта - 54 100 рублей</span>
+      </div>
+      <div class="item_pictures flex">
+        <img src="img/2ss.jpg" class="item_picture" alt="Схема лестницы">
+        <img src="img/2s.jpg" class="item_picture" alt="Лестница в интерьере">
+      </div>
+      <button type="submit" class="section_complects__btn">Узнать подробнее</button>
+    </li>
+    <li class="section_complects__item flex">
+      <div class="item_desc-block">
+        <span class="item_desc">ВЛ-3 Деревянная лестница с поворотом на 90 г.</span>
+        <span class="item_desc item_desc__price">Стоимость комплекта - 69 000 рублей</span>
+      </div>
+      <div class="item_pictures flex">
+        <img src="img/3ss.jpg" class="item_picture" alt="Схема лестницы">
+        <img src="img/3s.jpg" class="item_picture" alt="Лестница в интерьере">
+      </div>
+      <button type="submit" class="section_complects__btn">Узнать подробнее</button>
+    </li>
+    <li class="section_complects__item flex">
+      <div class="item_desc-block">
+        <span class="item_desc">ВЛ-4 Деревянная лестница с поворотом на 180 г.</span>
+        <span class="item_desc item_desc__price">Стоимость комплекта - 59 900 рублей</span>
+      </div>
+      <div class="item_pictures flex">
+        <img src="img/4ss.jpg" class="item_picture" alt="Схема лестницы">
+        <img src="img/4s.jpg" class="item_picture" alt="Лестница в интерьере">
+      </div>
+      <button type="submit" class="section_complects__btn">Узнать подробнее</button>
+    </li>
+    <li class="section_complects__item flex">
+      <div class="item_desc-block">
+        <span class="item_desc">ВЛ-5 Деревянная лестница с поворотом на 90 г.</span>
+        <span class="item_desc item_desc__price">Стоимость комплекта - 96 000 рублей</span>
+      </div>
+      <div class="item_pictures flex">
+        <img src="img/5ss.jpg" class="item_picture" alt="Схема лестницы">
+        <img src="img/5s.jpg" class="item_picture" alt="Лестница в интерьере">
+      </div>
+      <button type="submit" class="section_complects__btn">Узнать подробнее</button>
+    </li>
+    <li class="section_complects__item flex">
+      <div class="item_desc-block">
+      <span class="item_desc">ВЛ-6 Деревянная лестница с поворотом на 90 г.</span>
+      <span class="item_desc item_desc__price">Стоимость комплекта - 89 300 рублей</span>
+    </div>
+    <div class="item_pictures flex">
+      <img src="img/6ss.jpg" class="item_picture" alt="Схема лестницы">
+      <img src="img/6s.jpg" class="item_picture" alt="Лестница в интерьере">
+    </div>
+    <button type="submit" class="section_complects__btn">Узнать подробнее</button>
+</li>
+    <li class="section_complects__item flex">
+      <div class="item_desc-block">
+        <span class="item_desc">ВЛ-7 Деревянная лестница с поворотом на 90 г.</span>
+        <span class="item_desc item_desc__price">Стоимость комплекта - 94 700 рублей</span>
+      </div>
+      <div class="item_pictures flex">
+        <img src="img/7ss.jpg" class="item_picture" alt="Схема лестницы">
+        <img src="img/7s.jpg" class="item_picture" alt="Лестница в интерьере">
+      </div>
+      <button type="submit" class="section_complects__btn">Узнать подробнее</button>
+    </li>
+    <li class="section_complects__item flex">
+      <div class="item_desc-block">
+        <span class="item_desc">ВЛ-8 Деревянная лестница с поворотом на 180 г.</span>
+        <span class="item_desc item_desc__price">Стоимость комплекта - 100 100 рублей</span>
+      </div>
+      <div class="item_pictures flex">
+        <img src="img/8ss.jpg" class="item_picture" alt="Схема лестницы">
+        <img src="img/8s.jpg" class="item_picture" alt="Лестница в интерьере">
+      </div>
+      <button type="submit" class="section_complects__btn">Узнать подробнее</button>
+    </li>
+    <li class="section_complects__item flex">
+      <div class="item_desc-block">
+        <span class="item_desc">ВЛ-9 Деревянная лестница с поворотом на 180 г.</span>
+        <span class="item_desc item_desc__price">Стоимость комплекта - 89 200 рублей</span>
+      </div>
+      <div class="item_pictures flex">
+        <img src="img/9ss.jpg" class="item_picture" alt="Схема лестницы">
+        <img src="img/9s.jpg" class="item_picture" alt="Лестница в интерьере">
+      </div>
+      <button type="submit" class="section_complects__btn">Узнать подробнее</button>
+    </li>
+    <li class="section_complects__item flex">
+      <div class="item_desc-block">
+        <span class="item_desc">ВЛ-10 Деревянная лестница с поворотом на 90 г.</span>
+        <span class="item_desc item_desc__price">Стоимость комплекта - 59 600 рублей</span>
+      </div>
+      <div class="item_pictures flex">
+        <img src="img/10ss.jpg" class="item_picture" alt="Схема лестницы">
+        <img src="img/10s.jpg" class="item_picture" alt="Лестница в интерьере">
+      </div>
+      <button type="submit" class="section_complects__btn">Узнать подробнее</button>
+    </li>
+    <li class="section_complects__item flex">
+      <div class="item_desc-block">
+        <span class="item_desc">ВЛ-11 Деревянная лестница с поворотом на 90 г.</span>
+        <span class="item_desc item_desc__price">Стоимость комплекта - 59 490 рублей</span>
+      </div>
+      <div class="item_pictures flex">
+        <img src="img/11ss.jpg" class="item_picture" alt="Схема лестницы">
+        <img src="img/11s.jpg" class="item_picture" alt="Лестница в интерьере">
+      </div>
+      <button type="submit" class="section_complects__btn">Узнать подробнее</button>
+    </li>
+    <li class="section_complects__item flex">
+      <div class="item_desc-block">
+        <span class="item_desc">ВЛ-12 Деревянная лестница с поворотом на 90 г.</span>
+        <span class="item_desc item_desc__price">Стоимость комплекта - 65 160 рублей</span>
+      </div>
+      <div class="item_pictures flex">
+        <img src="img/12ss.jpg" class="item_picture" alt="Схема лестницы">
+        <img src="img/12s.jpg" class="item_picture" alt="Лестница в интерьере">
+      </div>
+      <button type="submit" class="section_complects__btn">Узнать подробнее</button>
+    </li>
+    <li class="section_complects__item flex">
+      <div class="item_desc-block">
+        <span class="item_desc">ВЛ-13 Деревянная лестница с поворотом на 90 г.</span>
+        <span class="item_desc item_desc__price">Стоимость комплекта - 82 690 рублей</span>
+      </div>
+      <div class="item_pictures flex">
+        <img src="img/13ss.jpg" class="item_picture" alt="Схема лестницы">
+        <img src="img/13s.jpg" class="item_picture" alt="Лестница в интерьере">
+      </div>
+      <button type="submit" class="section_complects__btn">Узнать подробнее</button>
+    </li>
+    <li class="section_complects__item flex">
+      <div class="item_desc-block">
+        <span class="item_desc">ВЛ-14 Деревянная лестница с поворотом на 90 г.</span>
+        <span class="item_desc item_desc__price">Стоимость комплекта - 43 870 рублей</span>
+      </div>
+      <div class="item_pictures flex">
+        <img src="img/14ss.jpg" class="item_picture" alt="Схема лестницы">
+        <img src="img/14s.jpg" class="item_picture" alt="Лестница в интерьере">
+      </div>
+      <button type="submit" class="section_complects__btn">Узнать подробнее</button>
+    </li>
+    <li class="section_complects__item flex">
+      <div class="item_desc-block">
+        <span class="item_desc">ВЛ-15 Деревянная лестница с поворотом на 360 г.</span>
+        <span class="item_desc item_desc__price">Стоимость комплекта - 85 100 рублей</span>
+      </div>
+      <div class="item_pictures flex">
+        <img src="img/15ss.jpg" class="item_picture" alt="Схема лестницы">
+        <img src="img/15s.jpg" class="item_picture" alt="Лестница в интерьере">
+      </div>
+      <button type="submit" class="section_complects__btn">Узнать подробнее</button>
+    </li>
+    <li class="section_complects__item flex">
+      <div class="item_desc-block">
+        <span class="item_desc">ВЛ-16 Деревянная лестница прямая</span>
+        <span class="item_desc item_desc__price">Стоимость комплекта - 51 660 рублей</span>
+      </div>
+      <div class="item_pictures flex">
+        <img src="img/16ss.jpg" class="item_picture" alt="Схема лестницы">
+        <img src="img/16s.jpg" class="item_picture" alt="Лестница в интерьере">
+      </div>
+      <button type="submit" class="section_complects__btn">Узнать подробнее</button>
+    </li>
+    <li class="section_complects__item flex">
+      <div class="item_desc-block">
+        <span class="item_desc">ВЛ-17 Деревянная лестница с поворотом на 90 г.</span>
+        <span class="item_desc item_desc__price">Стоимость комплекта - 68 300 рублей</span>
+      </div>
+      <div class="item_pictures flex">
+        <img src="img/17ss.jpg" class="item_picture" alt="Схема лестницы">
+        <img src="img/17s.jpg" class="item_picture" alt="Лестница в интерьере">
+      </div>
+      <button type="submit" class="section_complects__btn">Узнать подробнее</button>
+    </li>
+  </ul>
+</div>
+</section>
+      <section class="section_servises">
+        <div class="container">
+        <h3 class="servises_subtitle">Как заказать лестницу? А если вы из другого региона?</h3>
+        <div class="servises_wrap flex">
+        <p class="servises_desc">Мы изготавливаем лестницы для всей России, отправляем транспортной компанией, сборка проста и понятна (занимает всего 1 день для специалиста или своими силами с использованием подробной схемы и нашей консультации). В Тюмени и Тюменской области, ХМАО, ЯНАО возможна доставка и установка нашей компанией - стоимость рассчитывается индивидуально.</p>
+      <img src="svg/servises-ladder.svg" alt="Лестница" class="servises_ladder">
+      </div>
+      <h3 class="servises_subtitle">Всего 4 шага до момента, когда лестница будет радовать вас и ваших гостей</h3>
+        <ul class="section_servises__list flex list-reset">
+          <li class="section_servises__item flex">
+            <div><span class="servises_number">1</span></div>
+            <div class="servises_actions">
+              <span>Отправьте заявку на замер</span>
+              <span class="servises_accent">или</span>
+              <span>Отправьте фотографию проёма и размеры помещения</span>
+            </div>
+            </li>
+          <li class="section_servises__item flex">
+             <div><span class="servises_number">2</span></div>
+            <div class="servises_actions">
+              <span>Отправим вам проект вашей лестницы с указанием стоимости</span>
+            </div>
+          </li>
+          <li class="section_servises__item flex">
+             <div><span class="servises_number">3</span></div>
+            <div class="servises_actions">
+              <span>Согласуем проект и заключаем договор с внесением предоплаты</span>
+            </div>
+          </li>
+          <li class="section_servises__item flex">
+            <div><span class="servises_number">4</span></div>
+           <div class="servises_actions">
+             <span>Изготовим лестницу, доставим, проконсультируем во время монтажа или установим сами</span>
+               <span class="servises_accent">Вы получаете свою идеальную лестницу</span>
+           </div>
+         </li>
+        </ul>
+        <div class="servises_form flex">
+          <form class="form flex"  method="post">
+          <input class="form__input" type="text" name="name" required placeholder="Введите имя">
+          <input class="form__input" type="tel" name="tel" required placeholder="Введите телефон">
+          <button class="form__btn transition" type="submit" >Оставить заявку</button>
+        </form>
+        <div class="serises_desc-block flex">
+        <p class="form_desc">Оставьте заявку и к вам на замер приедет наш специалист в удобное время<br>мы проконсультируем, как сделать замер самостоятельно</p>
+        <span class="servises_accent__form">или</span>
+        </div>
+      </div>
+        <a href="#survey" class="btn_price">Рассчитать стоимость</a>
+      </div>
+      </section>
+
+      <!--section-gallery-->
+
+      <section id="gallery" class="section-gallery">
+        <div class="container">
+        <h2 class="section-gallery__title title-style">Примеры наших работ</h2>
+        <svg class="switch_icon switch_icon__left icon-hover">
+          <use xlink:href="./svg/sprite.svg#switch_image_left"></use>
+      </svg>
+      <svg class="switch_icon switch_icon__right icon-hover">
+        <use xlink:href="./svg/sprite.svg#switch_image_right"></use>
+    </svg>
+        <div class="gallery_block flex">
+          <img src="img/14ss.jpg" alt="" class="gallery_image">
+          <img src="img/14ss.jpg" alt="" class="gallery_image">
+          <img src="img/14ss.jpg" alt="" class="gallery_image">
+          <img src="img/14ss.jpg" alt="" class="gallery_image">
+          <img src="img/14ss.jpg" alt="" class="gallery_image">
+          <img src="img/14ss.jpg" alt="" class="gallery_image">
+        </div>
+      </div>
+      </section>
+
+      <!--section-survey-->
+
+      <section id="survey" class="section-survey">
+        <div class="container">
+        <h2 class="survey__title title-style">Ответьте на несколько вопросов для получения расчёта стоимости</h2>
+        <form class="survey__form flex">
+         <div class="survey__question">Выберите форму лестницы</div>
+          <label class="surey-label"><input type="radio" class="survey-radio" name="form" value="прямая">прямая</label>
+          <label class="surey-label"><input type="radio" class="survey-radio" name="form" value="винтовая">винтовая</label>
+          <label class="surey-label"><input type="radio" class="survey-radio" name="form" value="поворотная">поворотная</label>
+          <label class="surey-label"><input type="radio" class="survey-radio" name="form" value="п-образная">п-образная</label>
+          <label class="surey-label"><input type="radio" class="survey-radio" name="form" value="г-образная">г-образная</label>
+         <div class="survey__question">Выберите каркас лестницы</div>
+          <label class="surey-label"><input type="radio" class="survey-radio" name="footing" value="двойной ломаный косоур">металлический - двойной ломаный косоур</label>
+          <label class="surey-label"><input type="radio" class="survey-radio" name="footing" value="монокосоу">металлический - монокосоур</label>
+          <label class="surey-label"><input type="radio" class="survey-radio" name="footing" value="деревянный">деревянный</label>
+          <label class="surey-label"><input type="radio" class="survey-radio" name="footing" value="обшить бетонное основание">нужно обшить бетонное основание</label>
+          <label class="surey-label"><input type="radio" class="survey-radio" name="footing" value="у нас есть уже основание">у нас есть уже основание</label>
+          <label class="surey-label"><input type="radio" class="survey-radio" name="footing" value="нужен совет">нужен совет</label>
+            <div class="survey__question">Выберите материал ограждения для Вашей лестницы</div>
+          <label class="surey-label"><input type="radio" class="survey-radio" name="fencing" value="ковка">ковка</label>
+          <label class="surey-label"><input type="radio" class="survey-radio" name="fencing" value="металл">металл</label>
+          <label class="surey-label"><input type="radio" class="survey-radio" name="fencing" value="стекло">стекло</label>
+          <label class="surey-label"><input type="radio" class="survey-radio" name="fencing" value="нужен совет">нужен совет</label>
+            <div class="survey__question">Укажите желаемую ширину лестницы в сантиметрах</div>
+          <input type="number" class="survey__input" name="width">
+            <label class="surey-label"><input type="radio" class="survey-radio" name="width" value="нужен совет">нужен совет</label>
+            <div class="survey__question">Укажите желаемую высоту лестницы от пола до потолка в сантиметрах</div>
+          <input type="number" class="survey__input" name="hight" >
+            <label class="surey-label"><input type="radio" class="survey-radio" name="hight" value="нужен совет">нужен совет</label>
+            <div class="survey__question">Укажите желаемый бюджет на Вашу лестницу</div>
+            <label class="surey-label"><input type="radio" class="survey-radio" name="budget" value="">-</label>
+            <label class="surey-label"><input type="radio" class="survey-radio" name="budget" value="">-</label>
+            <label class="surey-label"><input type="radio" class="survey-radio" name="budget" value="">-</label>
+            <label class="surey-label"><input type="radio" class="survey-radio" name="budget" value="">-</label>
+              <div class="survey__question">Выберите свой подарок</div>
+            <label class="surey-label"><input type="radio" class="survey-radio" name="prize" value="">-</label>
+            <label class="surey-label"><input type="radio" class="survey-radio" name="prize" value="">-</label>
+            <label class="surey-label"><input type="radio" class="survey-radio" name="prize" value="">-</label>
+            <label class="surey-label"><input type="radio" class="survey-radio" name="prize" value="">-</label>
+          <input type="text" class="form__input" name="name" placeholder="Введите ваше имя" required>
+          <input type="tel" class="form__input" name="phone" placeholder="Введите ваш номер телефона" required>
+          <button class="form__btn transition form__btn">Рассчитать стоимость</button>
+        </form>
+      </div>
+      </section>
+      
+      <!--section-contacts-->
+
+      
+      <section id="contacts" class="section-contacts">
+        <div class="container">
+        <h2 class="section-contacts__title title-style">Контакты</h2>
+        <!--<div class="contacts_block flex">
+          <div class="contacts_map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4f1ff12dda6d67eada36c98796ea9ea36780b4bab67a96e1809491d85b55e3c4&amp;source=constructor" width="500" height="300" frameborder="0">
+          </div>
+          <div class="contacts_info">
+            <span class="info info_adress">Мы находимся по адресу:<br> г. Тюмень, ул. Солнечный проезд, дом 5</span>
+            <span class="info info_tel"></span>
+            <span class="info info_email"></span>
+            <span class="info info-instagram"></span>
+          </div>
+        </div>-->
+        <!--<div class="contacts_block flex">
+          <div class="contacts_map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4f1ff12dda6d67eada36c98796ea9ea36780b4bab67a96e1809491d85b55e3c4&amp;source=constructor" width="500" height="300" frameborder="0"></div>
+          <div class="contacts_info">И здесь адрес</div>
+        </div>
+      </div>-->
+      </div>
+      </section>
+    </main>
+    <footer class="footer">
+    </footer>
+
+    <!--Modal-->
+
+
+    <div class="overlay"></div>
+    <div class="modal_window">
+      <div class="modal_header">
+      <div class="modal_close">&times;</div>
+        <h1 class="modal_title">Каталог подарков</h1>
+      </div>
+      <h2 class="modal_heading">Стулья</h2>
+      <ul class="modal_list flex">
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Честер</span>
+            <span class="name_vendor-code name_style">ММБ СТ-01</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/000_chester_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/000_chester_2.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/000_chester_3.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Ирис</span>
+            <span class="name_vendor-code name_style">ММБ СТ-02</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/001_iris_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/001_iris_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/001_iris_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Дублин</span>
+            <span class="name_vendor-code name_style">ММБ СТ-03</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/002_dublin_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/002_dublin_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/002_dublin_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Кассиопея</span>
+            <span class="name_vendor-code name_style">ММБ СТ-04</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/003_kassiopeya_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/003_kassiopeya_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/003_kassiopeya_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Лилу</span>
+            <span class="name_vendor-code name_style">ММБ СТ-05</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/004_lilu_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/004_lilu_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/004_lilu_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Колумб</span>
+            <span class="name_vendor-code name_style">ММБ СТ-06</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/005_columb_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/005_columb_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/005_columb_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Румба</span>
+            <span class="name_vendor-code name_style">ММБ СТ-07</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/006_rumba_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/006_rumba_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/006_rumba_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Денвер</span>
+            <span class="name_vendor-code name_style">ММБ СТ-08</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/007_denver_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/007_denver_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/007_denver_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Дуглас</span>
+            <span class="name_vendor-code name_style">ММБ СТ-09</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/008_duglas_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/008_duglas_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/008_duglas_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Осло</span>
+            <span class="name_vendor-code name_style">ММБ СТ-010</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/009_oslo_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/009_oslo_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/009_oslo_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Сидней</span>
+            <span class="name_vendor-code name_style">ММБ СТ-011</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/010_sidney_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/010_sidney_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/010_sidney_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Франклин</span>
+            <span class="name_vendor-code name_style">ММБ СТ-012</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/011_franklin_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/011_franklin_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/011_franklin_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Саваж</span>
+            <span class="name_vendor-code name_style">ММБ СТ-013</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/012_savaje_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/012_savaje_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/012_savaje_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li><li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Версаль</span>
+            <span class="name_vendor-code name_style">ММБ СТ-014</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/013_versale_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/013_versale_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/013_versale_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li><li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Модерн</span>
+            <span class="name_vendor-code name_style">ММБ СТ-015</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/014_modern_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/014_modern_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/014_modern_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li><li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Палермо</span>
+            <span class="name_vendor-code name_style">ММБ СТ-016</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/015_palermo_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/015_palermo_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/015_palermo_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li><li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Палермо</span>
+            <span class="name_vendor-code name_style">ММБ СТ-017</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/016_palermo2_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/016_palermo2_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/016_palermo2_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li><li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Бергамо</span>
+            <span class="name_vendor-code name_style">ММБ СТ-018</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/017_bergamo_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/017_bergamo_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/017_bergamo_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li><li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Шарм</span>
+            <span class="name_vendor-code name_style">ММБ СТ-019</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/018_sharm_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/018_sharm_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/018_sharm_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li><li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Турин</span>
+            <span class="name_vendor-code name_style">ММБ СТ-020</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/019_turin2_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/019_turin2_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/019_turin2_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li><li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Джулия</span>
+            <span class="name_vendor-code name_style">ММБ СТ-021</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/020_juliyan_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/020_juliyan_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/020_juliyan_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li><li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Пенелопа</span>
+            <span class="name_vendor-code name_style">ММБ СТ-022</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/021_penelopa_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/021_penelopa_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/021_penelopa_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li><li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Кальяри</span>
+            <span class="name_vendor-code name_style">ММБ СТ-023</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/022_kalyari_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/022_kalyari_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/022_kalyari_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Леон</span>
+            <span class="name_vendor-code name_style">ММБ СТ-024</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/023_leon_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/023_leon_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/023_leon_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li>
+      </ul>
+      <h2 class="modal_heading">Стулья барные</h2>
+      <ul class="modal_list flex">
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Кассиопея</span>
+            <span class="name_vendor-code name_style">ММБ СТ-025</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/024_kassiopeya_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/024_kassiopeya_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/024_kassiopeya_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li>
+          <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Сидней</span>
+            <span class="name_vendor-code name_style">ММБ СТ-026</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/025_martin_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/025_martin_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/025_martin_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Лион</span>
+            <span class="name_vendor-code name_style">ММБ СТ-027</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/026_lion_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/026_lion_2.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/026_lion_3.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Дуглас</span>
+            <span class="name_vendor-code name_style">ММБ СТ-028</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/027_duglas_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/027_duglas_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/027_duglas_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Барный</span>
+            <span class="name_vendor-code name_style">ММБ СТ-029</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/028_barnyi_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/028_barnyi_3.jpg" alt="" class="modal_picture__small">
+            <img src="./img/modal/028_barnyi_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
+          </div>
+        </div>
+        </li>
+      </ul>
+      <h2 class="modal_heading">Столы</h2>
+      <ul class="modal_list flex">
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Ирин</span>
+            <span class="name_vendor-code name_style">ММБ СТ-030</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/029_irin_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/029_irin_4.jpg" alt="" class="modal_picture__small">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Комфорт</span>
+            <span class="name_vendor-code name_style">ММБ СТ-031</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/030_comfort_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/030_comfort_4.jpg" alt="" class="modal_picture__small">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Париж</span>
+            <span class="name_vendor-code name_style">ММБ СТ-032</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/031_paris_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/031_paris_4.jpg" alt="" class="modal_picture__small">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Феникс</span>
+            <span class="name_vendor-code name_style">ММБ СТ-033</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/032_fenix3.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/032_fenix_1.jpg" alt="" class="modal_picture__small">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Лайт</span>
+            <span class="name_vendor-code name_style">ММБ СТ-034</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/033_lite_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/033_lite_2.jpg" alt="" class="modal_picture__small">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Рим</span>
+            <span class="name_vendor-code name_style">ММБ СТ-035</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/034_rim_1.jpg" alt="" class="modal_picture">
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Альери</span>
+            <span class="name_vendor-code name_style">ММБ СТ-036</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/035_alier120_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/035_alier120_2.jpg" alt="" class="modal_picture__small">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Верона</span>
+            <span class="name_vendor-code name_style">ММБ СТ-037</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/036_verona_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/036_verona_2.jpg" alt="" class="modal_picture__small">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Неизвестный</span>
+            <span class="name_vendor-code name_style">ММБ СТ-038</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/037_unknown_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/037_unknown2_2.jpg" alt="" class="modal_picture__small">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Элегант</span>
+            <span class="name_vendor-code name_style">ММБ СТ-039</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/038_elegant_1.jpg" alt="" class="modal_picture">
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Верона белая</span>
+            <span class="name_vendor-code name_style">ММБ СТ-040</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/039_verona_white_1.jpg" alt="" class="modal_picture">
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Глостер</span>
+            <span class="name_vendor-code name_style">ММБ СТ-041</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/040_gloster_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/040_gloster_2.jpg" alt="" class="modal_picture__small">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Марсель 1</span>
+            <span class="name_vendor-code name_style">ММБ СТ-042</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/041_marsel_1.jpg" alt="" class="modal_picture">
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Марсель 2</span>
+            <span class="name_vendor-code name_style">ММБ СТ-043</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/041_marsel2.jpg" alt="" class="modal_picture">
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Марсель 3</span>
+            <span class="name_vendor-code name_style">ММБ СТ-044</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/041_marsel3.jpg" alt="" class="modal_picture">
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Марсель 4</span>
+            <span class="name_vendor-code name_style">ММБ СТ-045</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/041_marsel4.jpg" alt="" class="modal_picture">
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Танго</span>
+            <span class="name_vendor-code name_style">ММБ СТ-046</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/042_tango_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/042_tango_2.jpg" alt="" class="modal_picture__small">
+          </div>
+        </div>
+        </li><li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Прада</span>
+            <span class="name_vendor-code name_style">ММБ СТ-047</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/043_prada_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/043_prada_2.jpg" alt="" class="modal_picture__small">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Кералита</span>
+            <span class="name_vendor-code name_style">ММБ СТ-048</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/044_keralita_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/044_keralita_2.jpg" alt="" class="modal_picture__small">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Альер</span>
+            <span class="name_vendor-code name_style">ММБ СТ-049</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/045_alier_1.jpg" alt="" class="modal_picture">
+           <div class="modal_item__small flex">
+            <img src="./img/modal/045_alier_2.jpg" alt="" class="modal_picture__small">
+          </div>
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Афина</span>
+            <span class="name_vendor-code name_style">ММБ СТ-050</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/046_afina_1.jpg" alt="" class="modal_picture">
+        </div>
+        </li>
+        <li class="modal_item flex">
+          <div class="modal_name flex">
+            <span class="name_title name_style">Венеция</span>
+            <span class="name_vendor-code name_style">ММБ СТ-051</span>
+            <span class="name_price name_style">3940 рублей</span>
+          </div>
+          <div class="modal_picture flex">
+          <img src="./img/modal/047_venecia.jpg" alt="" class="modal_picture">
+        </div>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+  <div class="overlay_form"></div>
+    <form class="form flex modal_form" method="post">
+      <div class="modal_close modal_close__form">&times;</div>
+      <input class="form__input" type="text" name="name" required placeholder="Введите имя">
+      <input class="form__input" type="tel" name="tel" required placeholder="Введите телефон">
+      <button class="form__btn transition" type="submit" >Получить консультацию</button>
+    </form>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
