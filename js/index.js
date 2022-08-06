@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
 
 
-const prize = document.querySelector('.open-prize');
+const prize = document.querySelector('.hero__button--prise');
 const close = document.querySelector('.modal_close');
 const overlay = document.querySelector('.overlay');
 const modalWindow = document.querySelector('.modal_window');
@@ -50,8 +50,6 @@ const toggle = () => {
   };
 };
 hamburger.addEventListener('click', toggle);
-
-
 
 
 

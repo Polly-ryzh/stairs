@@ -30,7 +30,7 @@
               </a>
              <nav class="header__nav">
           <ul class="header__nav-list flex list-reset">
-            <li class="header__nav-item">
+            <li class="header__nav-item header__nav-item--one">
               <a href="#types" class="link-style underline-one">Лестницы</a>
               <span class="link__popup"></span>
             </li>
@@ -92,7 +92,10 @@
         <div class="hero__block flex">
           <h1 class="hero__title">Все виды лестниц качественно и&nbsp;по&nbsp;доступным ценам</h1>
           <p class="hero__description">Подберем и рассчитаем 3 варианта лестниц под ваш интерьер бесплатно</p>
-          <button class="hero__btn btn">Получить варианты</button>
+          <a class="hero__button" href="javascript:void(0)">
+            <span class="hero__button-desk">ПОЛУЧИТЬ</span>
+            <div class="wawe"></div>
+          </a>
           
             <!--<form class="form flex" method="post">
               <input class="form__input" type="text" name="name" required placeholder="Введите имя">
@@ -103,7 +106,10 @@
          
            
           <div class="hero__prize flex">
-            <button class="open-prize custom-btn btn-5">Каталог подарков</button>
+            <a class="hero__button hero__button--prise" href="javascript:void(0)">
+              <span class="hero__button-desk hero__button-desk--prise">ПОДАРКИ</span>
+              <div class="wawe wawe--prise"></div>
+            </a>            
             <img src="img/prize.svg" class="hero__prize-picture" alt="Подарок">
             <!--<p class="hero__prize-description">При офорлении заказа много подарков от&nbsp;нас и&nbsp;наших партнеров!</p>-->
           </div>
@@ -114,7 +120,7 @@
 
       <!--section-types-->
 
-      <section id="types" class="section-types">
+      <!--<section id="types" class="section-types">
         <div class="container section-types__container">
         <h2 class="section-types__title title-style">Виды лестниц</h2>
         <div class="types-one">
@@ -243,7 +249,7 @@
       </section>
       <section id="company" class="company">
         <h2 class="company-title title-style">О компании</h2>
-      </section>
+      </section>-->
 
       <!--section-advantage-->
 
@@ -293,8 +299,8 @@
       <!--section-servises-->
 <section class="section_complects">
   <div class="container">
-  <h2 class="section_complects__title title-style">Комплекты под покраску</h2>
-  <p class="section_complects__desc">Описание блока</p>
+  <h2 class="section_complects__title title-style">Лестница - конструктор</h2>
+  <p class="section_complects__desc">Лестница - конструктор служит идеальным вариантом для тех, кто хочет поучаствовать в реализации проекта. Мы предоставим вам готовый комплект под покраску и самостоятельную сборку, что позволит значительно сэкономить. Лестницу собрать самостоятельно не составит особого труда, так как используется модульная система.</p>
   <ul class="section_complects__list flex">
     <li class="section_complects__item flex">
       <div class="item_desc-block">
@@ -1318,6 +1324,7 @@
       <button class="form__btn transition" type="submit" >Получить консультацию</button>
     </form>
     </div>
+
     <script src="js/index.js"></script>
 </body>
 </html>
