@@ -23,7 +23,7 @@
     <!--header-->
 
     <header class="header">
-        <div class="container  header-container">
+        <div class="container header-container">
           <div class="header__wrapper flex">
               <a href="#" class="header__logo">
                 <img src="svg/logo.svg" alt="Логотип - Весёлый лестничник">
@@ -32,7 +32,6 @@
           <ul class="header__nav-list flex list-reset">
             <li class="header__nav-item header__nav-item--one">
               <a href="#types" class="link-style underline-one">Лестницы</a>
-              <span class="link__popup"></span>
             </li>
             <li class="header__nav-item">
               <a href="#company" class="link-style underline-one">О компании</a>
@@ -75,45 +74,58 @@
               </a>
             </li>
           </ul>
-      </div>
-      
+        </div>
     </div>
     </div>
 
     </header>
-    <!--main-->
-
-    <!--main-banner-->
-
+    
     <main class="main">
+
+      <!-- hero -->
       
       <section class="hero">
-        <div class="container hero-container">
-        <div class="hero__block flex">
-          <h1 class="hero__title">Все виды лестниц качественно и&nbsp;по&nbsp;доступным ценам</h1>
-         
-          <p class="hero__description">Подберем и рассчитаем 3 варианта лестниц под ваш интерьер бесплатно</p>
+        <div class="container hero-container flex">
+          <div class="hero-wrapper">
+            <div class="hero__prize flex">
+              <a class="hero__button hero__button--prise flex" href="javascript:void(0)">
+                <span class="hero__button-desk hero__button-desk--prise">ПОДАРКИ</span>
+                <div class="wawe wawe--prise"></div>
+              </a>            
+              <img src="img/prize.svg" class="hero__prize-picture" alt="Подарок">
+            </div>
+          </div>
+          <div class="hero-wrapper hero-wrapper--2">
+            <div class="hero__block flex">
+              <h1 class="hero__title">Все виды лестниц</h1>
+              <span class="hero__title hero__title--desk">качественно и&nbsp;по&nbsp;доступным ценам</span>
+            </div>
+          </div>
+          <div class="hero-wrapper">
+            <p class="hero__description">Подберем и рассчитаем 3 варианта лестниц под ваш интерьер бесплатно</p>
           <a class="hero__button" href="javascript:void(0)">
             <span class="hero__button-desk">ПОЛУЧИТЬ</span>
             <div class="wawe"></div>
           </a>
+          </div>
+        
+          <!-- <div class="hero__images">
+            <img src="img/2.jpg" alt="" class="hero__image">
+          </div>
+           -->
+         
           
-            <!--<form class="form flex" method="post">
+          
+            <!-- <form class="form flex" method="post">
               <input class="form__input" type="text" name="name" required placeholder="Введите имя">
               <input class="form__input" type="tel" name="tel" required placeholder="Введите телефон">
               <button class="form__btn transition" type="submit" >Получить консультацию</button>
-            </form>-->
-      </div>
+            </form> -->
+      
         
          
            
-          <div class="hero__prize flex">
-            <a class="hero__button hero__button--prise flex" href="javascript:void(0)">
-              <span class="hero__button-desk hero__button-desk--prise">ПОДАРКИ</span>
-              <div class="wawe wawe--prise"></div>
-            </a>            
-            <img src="img/prize.svg" class="hero__prize-picture" alt="Подарок">
-          </div>
+          
 
           </div>
           
