@@ -68,7 +68,7 @@ list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
+    width: 200px;
     height: 60px;
     color: var(--white-color);
     background: #F7732E;
@@ -79,8 +79,19 @@ list-style: none;
     transition: all .5s linear;
 }
 
+.glass {
+    padding: 20px;
+    /* background: rgba(255, 255, 255, 0.2); */
+    backdrop-filter: blur(5px);
+    /* border: 1px solid rgba(255, 255, 255, 0.4); */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+
+    border-radius: 20px;
+}
+
 .btn:hover {
-    background: #745b4c;
+    background: #fd8a5c;
 }
 
 .container {
@@ -310,14 +321,27 @@ list-style: none;
     }
 
     .hero-container {
+    /* justify-content: space-between; */
      height: 700px; 
+    }
+
+    .hero_wrapper {
+        align-self: flex-end;
+        margin-bottom: 50px;
+        max-width: 20%;
+    }
+
+    .hero_wrapper--center {justify-self: center;
+        align-self: center;
+        max-width: 60%;
     }
     
     .hero__block {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding-top: 100px;
+        background: none;
+        border: none;
     }
     
     .hero__title {
@@ -340,113 +364,18 @@ list-style: none;
     }
 
     .hero__description {
+        text-align: center;
         margin-right: 10px;
         margin-bottom: 40px;
         max-width: 300px;
-        font-size: 18px;
-        font-weight: bold;
+        line-height: 5px;
+        font-size: 16px;
         line-height: 36px;
-        color: rgb(49, 24, 10);
+        color: white;
     }
 
-    .hero__image {
-        margin-left: 300px;
-        width: 320px;
-        border: 1px solid rgba(235, 229, 220, 0.8);
-        filter: drop-shadow(0px 5px 5px #EBE5DC);
-    }
-
-    /* .hero__button {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 50px;
-        padding: 20px;
-        width: 150px;
-        overflow: hidden;
-        cursor: pointer;
-    }
-
-    .hero__button:hover .wawe {
-        top: -120px;
-      }
-
-    .hero__button-desk {
-        position: relative;
-        color: orange;
-        font-size: 13px;
-        letter-spacing: 3px;
-        font-weight: bold;
-        z-index: 1;
-    }
-
-    .wawe {
-        width: 200px;
-        height: 200px;
-        background-color: #6b6c6e;
-        box-shadow: inset 0 0 50px rgba(0,0,0,.5);
-        position: absolute;
-        left: 0;
-        top: -80px;
-        transition: 0.4s;
-    }
-
-    .wawe::before, .wawe::after {
-        width: 200%;
-        height: 200%;
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%,-75%);
-    }
-
-    .wawe::before {
-        border-radius: 45%;
-        background-color: rgb(77, 27, 20);
-        animation: wave 5s linear infinite;
-    }
-
-    .wawe::after {
-        border-radius: 40%;
-        background-color: rgba(20,20,20,0.5);
-        animation: wawe 10s linear infinite;
-    }
-    @keyframes wawe {
-      0% {
-        transform: translate(-50%, -75%) rotate(0deg);
-      }
-      100% {
-        transform: translate(-50%, -75%) rotate(360deg);
-      }
-    }
-    
-    .hero__button--prise {
-        margin-right: 0;
-    } */
-
-    /* .hero__button-desk--prise {
-        color: red;
-        text-shadow: 1px 1px 2px rgb(182, 126, 126), 0 0 1em wheat, 0 0 1em white;
-    }
-
-    .wawe--prise {
-        background-color:  rgb(236, 255, 243);
-        box-shadow: inset 0 0 50px white;
-
-    }
-
-    .wawe--prise::before {
-        background-color: rgb(255, 246, 242);
-    }
-
-    .wawe--prise::after {
-        background-color: rgb(241, 200, 188);
-    } */
-        
-
-    /*.form{
+   
+     /*.form{
         flex-direction: column;
         width: 320px;
     }
@@ -496,11 +425,6 @@ list-style: none;
     .hero__prize{
             flex-direction: column;
             gap: 30px;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            border-radius: 20px;
     }
        
     .hero__prize-picture {
