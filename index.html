@@ -11,11 +11,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat+Alternates:wght@300;400;600&display=swap" rel="stylesheet">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,27 +20,27 @@
     <!--header-->
 
     <header class="header">
-        <div class="container header-container">
+        <div class="container header__container">
           <div class="header__wrapper flex">
               <a href="#" class="header__logo">
                 <img src="svg/logo.svg" alt="Логотип - Весёлый лестничник">
               </a>
-             <nav class="header__nav">
+             <nav class="header__nav flex">
           <ul class="header__nav-list flex list-reset">
-            <li class="header__nav-item header__nav-item--one">
-              <a href="#types" class="link-style underline-one">Лестницы</a>
+            <li class="header__nav-item">
+              <a href="#types" class="header__nav-link">Лестницы</a>
             </li>
             <li class="header__nav-item">
-              <a href="#company" class="link-style underline-one">О компании</a>
+              <a href="#company" class="header__nav-link">О компании</a>
             </li>
             <li class="header__nav-item">
-              <a href="#gallery" class="link-style underline-one">Наши работы</a>
+              <a href="#gallery" class="header__nav-link">Наши работы</a>
             </li>
             <li class="header__nav-item">
-              <a href="#survey" class="link-style underline-one">Расчёт стоимости</a>
+              <a href="#survey" class="header__nav-link">Расчёт стоимости</a>
             </li>
             <li class="header__nav-item">
-              <a href="#contacts" class="link-style underline-one">Контакты</a>
+              <a href="#contacts" class="header__nav-link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -56,19 +53,19 @@
         <div class="header-contacts flex">
           <ul class="contacts_list">
             <li class="contacts_item list-reset">
-              <a href="tel:+79999999999" class="link-style underline-one">+7(999)999-99-99</a>
+              <a href="tel:+79999999999" class="header-contacts__link">+7(999)999-99-99</a>
             </li>
             <li class="contacts_item list-reset">
-              <a href="mailto:#" class="link-style underline-one">mail@yandex.ru</a>
+              <a href="mailto:#" class="header-contacts__link">mail@yandex.ru</a>
             </li>
           </ul>
           <ul class="contacts_list flex">
-            <li class="list-reset link-style header-contacts__icon">
+            <li class="list-reset header-contacts__icon">
               <a href="#">
                 <img src="img/whatsapp.svg" alt="whatsapp" class="header-contacts__whatsapp-icon">
               </a>
             </li>
-            <li class="list-reset link-style header-contacts__icon">
+            <li class="list-reset header-contacts__icon">
               <a href="#">
                 <img src="img/instagram.svg" alt="instagram" class="header-contacts__instagram-icon">
               </a>
@@ -85,44 +82,149 @@
       <!-- hero -->
       
       <section class="hero">
-        <div class="container hero-container flex">
-          <div class="hero_wrapper">
-            <div class="hero__prize flex glass">
-                <button class="btn hero__button">ПОДАРКИ</button>
-              <img src="img/prize.svg" class="hero__prize-picture" alt="Подарок">
-            </div>
+        <div class="container hero__container flex">
+          <div class="hero__block hero__block--calculate flex glass">
+            <h2 class="calculate__title">Расчёт стоимости</h2>
+            <form action="#" class="calculate__form flex">
+              <label>
+                <span>Укажите длину (в см)</span>
+                <input type="number" class="calculate__input" name="длина">
+              </label>
+              <label>
+                <span>Укажите ширину (в см)</span>
+                <input type="number" class="calculate__input" name="ширина">
+              </label>
+              <label>
+                <span>Выберите форму</span>
+                <select type="number" class="calculate__select" name="Форма">
+                  <option value="прямая">прямая</option>
+                  <option value="винтовая">винтовая</option>
+                  <option value="поворотная">поворотная</option>
+                  <option value="п-образная">п-образная</option>
+                  <option value="г-образная">г-образная</option>
+                </select>
+              </label>
+              <label>
+                <span>Выберите каркас</span>
+                <select type="select" class="calculate__select"  name="Форма">
+                  <option value="деревянный">деревянный</option>
+                  <option value="металлический - двойной ломаный косоур">металлический - двойной ломаный косоур</option>
+                  <option value="металлический - монокосоур">металлический - монокосоур</option>
+                  <option value="обшить бетонное основание">обшить бетонное основание</option>
+                  <option value="основание уже есть">основание уже есть</option>
+                  <option value="нужен совет">нужен совет</option>
+                </select>
+              </label>
+              <label>
+                <span>Выберите ограждение</span>
+                <select type="select" class="calculate__select" name="ограждение">
+                  <option value="металлическое">металлическое</option>
+                  <option value="кованое">кованое</option>
+                  <option value="деревянное">деревянное</option>
+                  <option value="стеклянное">стеклянное</option>
+                  <option value="нужен совет">нужен совет</option>
+                </select>
+              </label>
+              <label>
+                <span>желаемый бюджет</span>
+                <select type="select" class="calculate__select" name="бюджет">
+                  <option value="металлическое">32423423</option>
+                  <option value="кованое">54645645</option>
+                  <option value="деревянное">245646</option>
+                  <option value="стеклянное">2565436</option>
+                  <option value="нужен совет">23456546т</option>
+                </select>
+              </label>
+              <label>
+                <span>Ваше имя</span>
+                <input type="text" class="calculate__input" name="имя">
+              </label>
+              <label>
+                <span>Ваш телефон</span>
+                <input type="number" class="calculate__input" name="телефон">
+              </label>
+              <button class="btn transition form__btn">Скажите стоимость</button> 
+            </form>
           </div>
-          <div class="hero_wrapper hero_wrapper--center">
-            <div class="hero__block flex">
+            <div class="hero__block hero__block--central flex glass">
               <h1 class="hero__title">Все виды лестниц</h1>
-              <span class="hero__title hero__title--desk">качественно и&nbsp;по&nbsp;доступным ценам</span>
+              <span class="hero__desk">качественно и&nbsp;по&nbsp;доступным ценам</span>
+              <p class="hero__descr">Подберем и рассчитаем под ваш интерьер бесплатно</p>
+              <div class="three">3&nbsp;варианта лестниц </div>
+              <button class="btn">Подобрать</button>
+            </div>
+            <div class="hero__block hero__prize flex glass">
+              <a href="#" class="btn hero__button">ПОДАРКИ</a>
+            <div class="gift flex">
+              <div class="gift__bow">
+                <div class="gift__bow-left"></div>
+                <div class="gift__bow-right"></div>
+                <div class="gift__bow-center"></div>
+              </div>
+              <div class="gift__box">
+                <div class="gift__lid-shadow"></div>
+              </div>
+              <div class="gift__lid"></div>
+              <div class="gift__star gift__star--1"></div>
+              <div class="gift__star gift__star--2"></div>
+              <div class="gift__star gift__star--3"></div>
+              <div class="gift__star gift__star--4"></div>
+              <div class="gift__star gift__star--5"></div>
             </div>
           </div>
-          <div class="hero_wrapper glass">
-            <p class="hero__description">Подберем и рассчитаем 3 варианта лестниц под ваш интерьер бесплатно</p>
-            <button class="btn">Подобрать</button>
           </div>
-        
-          <!-- <div class="hero__images">
-            <img src="img/2.jpg" alt="" class="hero__image">
+  </section>
+  <div class="modal">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <form action="#" class="modal__form flex">
+          <div data-close class="modal__close">&times;</div>
+          <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+          <input type="text" required placeholder="Ваше имя" name="name" class="modal__input">
+          <input type="phone" required placeholder="Ваш номер телефона" name="phone" class="modal__input">
+          <button class="btn">Перезвонить мне</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <section id="company" class="section__company">
+    <div class="container">
+      <div class="company__block">
+        <h2 class="company-title">О компании</h2>
+        <p class="company__descr">Мы предполагаем, что вам нужна лестница =)</p>
+        <div class="company__list flex">
+          <div class="company__mission">
+            <p class="company__mission-text">
+              Наша миссия заключается в том, чтобы изготовить идеальную лестницу каждому в дом
+            </p>
           </div>
-           -->
-         
-          
-          
-            <!-- <form class="form flex" method="post">
-              <input class="form__input" type="text" name="name" required placeholder="Введите имя">
-              <input class="form__input" type="tel" name="tel" required placeholder="Введите телефон">
-              <button class="form__btn transition" type="submit" >Получить консультацию</button>
-            </form> -->
-      
-        
-         
-           
-          
-
+          <div class="company__item">
+            <div class="company__img company__img-order">
+            </div>
+            <div class="company__item-descr">
+              <h2 class="company__item-heading">
+                Лестница на заказ
+              </h2>
+              <p class="company__item-text">
+                Разработаем проект с нуля или изготовим с точностью по вашему проекту в любом стиле - классика, лофт...
+              </p>
+              </div>
           </div>
-          
+          <div class="company__item">
+            <div class="company__img company__img-constructor">
+            </div>
+            <div class="company__item-descr">
+              <h2 class="company__item-heading">
+                Лестница - конструктор 
+              </h2>
+              <p class="company__item-text">
+                есть возможность заказать готовый комплект лестницы для самостоятельной покраски и сборки без сварки
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
       <!--section-types-->
@@ -260,41 +362,41 @@
 
       <!--section-advantage-->
 
-      <section class="section-advantage">
+      <!-- <section class="section-advantage">
         <div class="container">
         <h2 class="section-advantage__heading title-style">Преимущества работы с нами</h2>
         <ul class="section-advantage__list flex list-reset">
-          <li class="section-advantage__item flex">
+          <li class="section-advantage__item flex glass">
             <h3 class="section-advantage__title">Индивидуальный проект</h3>            
             <span class="section-advantage__desc">проект любой сложности</span>
             <span class="section-advantage__desc">под ваш интерьер</span>
             <span class="section-advantage__desc">макет лестницы в интерьере бесплатно</span>
           </li>
-          <li class="section-advantage__item flex">
+          <li class="section-advantage__item flex glass">
             <h3 class="section-advantage__title">Собственное производство</h3>
             <span class="section-advantage__desc">экологически чистые материалы</span>
             <span class="section-advantage__desc">подтверждено сертификатами</span>
             <span class="section-advantage__desc">лучшие породы дерева</span>
           </li>
-          <li class="section-advantage__item flex">
+          <li class="section-advantage__item flex glass">
             <h3 class="section-advantage__title">Гарантия и опыт</h3>
             <span class="section-advantage__desc">25 лет опыта в сфере</span>
             <span class="section-advantage__desc">до 100 лет гарантия</span>
             <span class="section-advantage__desc"></span>
           </li>
-          <li class="section-advantage__item flex">
+          <li class="section-advantage__item flex glass">
             <h3 class="section-advantage__title">Сборный каркас</h3>
             <span class="section-advantage__desc">под любой проём</span>
             <span class="section-advantage__desc">монтаж без сварки</span>
             <span class="section-advantage__desc">возможность установки в законченный ремонт</span>
           </li>  
-          <li class="section-advantage__item flex">
+          <li class="section-advantage__item flex glass">
             <h3 class="section-advantage__title">Возможность самостоятельного монтажа</h3>
             <span class="section-advantage__desc">каркас состоит из нескольких частей</span>
             <span class="section-advantage__desc">сборка каркаса до 3-х часов, лестницы до 2-х дней своими силами</span>
             <span class="section-advantage__desc">экономия на монтаже до 20.000 рублей</span>
           </li>
-          <li class="section-advantage__item flex">
+          <li class="section-advantage__item flex glass">
             <h3 class="section-advantage__title">Еще больше возможностей</h3>
             <span class="section-advantage__desc">доставка в любой регион РФ транспортной компанией</span>
             <span class="section-advantage__desc">рассрочка без переплаты</span>
@@ -302,12 +404,12 @@
           </li>
         </ul>
       </div>
-      </section>
+      </section> -->
       <!--section-servises-->
 <section class="section_complects">
   <div class="container">
   <h2 class="section_complects__title title-style">Лестница - конструктор</h2>
-  <p class="section_complects__desc">Лестница - конструктор служит идеальным вариантом для тех, кто хочет поучаствовать в реализации проекта. Мы предоставим вам готовый комплект под покраску и самостоятельную сборку, что позволит значительно сэкономить. Лестницу собрать самостоятельно не составит особого труда, так как используется модульная система.</p>
+  <p class="section_complects__desc">Лестница - конструктор будет идеальным решением для тех, кто хочет поучаствовать в реализации проекта. Мы предоставим вам готовый комплект под покраску и самостоятельную сборку, что позволит значительно сэкономить. Лестницу собрать самостоятельно не составит особого труда, так как используется модульная система.</p>
   <ul class="section_complects__list flex">
     <li class="section_complects__item flex">
       <div class="item_desc-block">
@@ -575,50 +677,7 @@
 
       <!--section-survey-->
 
-      <section id="survey" class="section-survey">
-        <div class="container">
-        <h2 class="survey__title title-style">Ответьте на несколько вопросов для получения расчёта стоимости</h2>
-        <form class="survey__form flex">
-         <div class="survey__question">Выберите форму лестницы</div>
-          <label class="surey-label"><input type="radio" class="survey-radio" name="form" value="прямая">прямая</label>
-          <label class="surey-label"><input type="radio" class="survey-radio" name="form" value="винтовая">винтовая</label>
-          <label class="surey-label"><input type="radio" class="survey-radio" name="form" value="поворотная">поворотная</label>
-          <label class="surey-label"><input type="radio" class="survey-radio" name="form" value="п-образная">п-образная</label>
-          <label class="surey-label"><input type="radio" class="survey-radio" name="form" value="г-образная">г-образная</label>
-         <div class="survey__question">Выберите каркас лестницы</div>
-          <label class="surey-label"><input type="radio" class="survey-radio" name="footing" value="двойной ломаный косоур">металлический - двойной ломаный косоур</label>
-          <label class="surey-label"><input type="radio" class="survey-radio" name="footing" value="монокосоу">металлический - монокосоур</label>
-          <label class="surey-label"><input type="radio" class="survey-radio" name="footing" value="деревянный">деревянный</label>
-          <label class="surey-label"><input type="radio" class="survey-radio" name="footing" value="обшить бетонное основание">нужно обшить бетонное основание</label>
-          <label class="surey-label"><input type="radio" class="survey-radio" name="footing" value="у нас есть уже основание">у нас есть уже основание</label>
-          <label class="surey-label"><input type="radio" class="survey-radio" name="footing" value="нужен совет">нужен совет</label>
-            <div class="survey__question">Выберите материал ограждения для Вашей лестницы</div>
-          <label class="surey-label"><input type="radio" class="survey-radio" name="fencing" value="ковка">ковка</label>
-          <label class="surey-label"><input type="radio" class="survey-radio" name="fencing" value="металл">металл</label>
-          <label class="surey-label"><input type="radio" class="survey-radio" name="fencing" value="стекло">стекло</label>
-          <label class="surey-label"><input type="radio" class="survey-radio" name="fencing" value="нужен совет">нужен совет</label>
-            <div class="survey__question">Укажите желаемую ширину лестницы в сантиметрах</div>
-          <input type="number" class="survey__input" name="width">
-            <label class="surey-label"><input type="radio" class="survey-radio" name="width" value="нужен совет">нужен совет</label>
-            <div class="survey__question">Укажите желаемую высоту лестницы от пола до потолка в сантиметрах</div>
-          <input type="number" class="survey__input" name="hight" >
-            <label class="surey-label"><input type="radio" class="survey-radio" name="hight" value="нужен совет">нужен совет</label>
-            <div class="survey__question">Укажите желаемый бюджет на Вашу лестницу</div>
-            <label class="surey-label"><input type="radio" class="survey-radio" name="budget" value="">-</label>
-            <label class="surey-label"><input type="radio" class="survey-radio" name="budget" value="">-</label>
-            <label class="surey-label"><input type="radio" class="survey-radio" name="budget" value="">-</label>
-            <label class="surey-label"><input type="radio" class="survey-radio" name="budget" value="">-</label>
-              <div class="survey__question">Выберите свой подарок</div>
-            <label class="surey-label"><input type="radio" class="survey-radio" name="prize" value="">-</label>
-            <label class="surey-label"><input type="radio" class="survey-radio" name="prize" value="">-</label>
-            <label class="surey-label"><input type="radio" class="survey-radio" name="prize" value="">-</label>
-            <label class="surey-label"><input type="radio" class="survey-radio" name="prize" value="">-</label>
-          <input type="text" class="form__input" name="name" placeholder="Введите ваше имя" required>
-          <input type="tel" class="form__input" name="phone" placeholder="Введите ваш номер телефона" required>
-          <button class="form__btn transition form__btn">Рассчитать стоимость</button>
-        </form>
-      </div>
-      </section>
+
       
       <!--section-contacts-->
 
@@ -668,10 +727,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/000_chester_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/000_chester_2.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/000_chester_3.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -682,10 +737,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/001_iris_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/001_iris_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/001_iris_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -696,10 +747,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/002_dublin_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/002_dublin_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/002_dublin_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -710,10 +757,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/003_kassiopeya_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/003_kassiopeya_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/003_kassiopeya_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -724,10 +767,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/004_lilu_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/004_lilu_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/004_lilu_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -738,10 +777,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/005_columb_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/005_columb_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/005_columb_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -752,10 +787,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/006_rumba_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/006_rumba_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/006_rumba_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -766,10 +797,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/007_denver_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/007_denver_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/007_denver_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -780,10 +807,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/008_duglas_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/008_duglas_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/008_duglas_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -794,10 +817,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/009_oslo_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/009_oslo_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/009_oslo_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -808,10 +827,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/010_sidney_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/010_sidney_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/010_sidney_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -822,10 +837,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/011_franklin_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/011_franklin_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/011_franklin_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -836,10 +847,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/012_savaje_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/012_savaje_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/012_savaje_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li><li class="modal_item flex">
           <div class="modal_name flex">
@@ -849,10 +856,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/013_versale_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/013_versale_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/013_versale_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li><li class="modal_item flex">
           <div class="modal_name flex">
@@ -862,10 +865,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/014_modern_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/014_modern_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/014_modern_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li><li class="modal_item flex">
           <div class="modal_name flex">
@@ -875,10 +874,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/015_palermo_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/015_palermo_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/015_palermo_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li><li class="modal_item flex">
           <div class="modal_name flex">
@@ -888,10 +883,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/016_palermo2_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/016_palermo2_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/016_palermo2_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li><li class="modal_item flex">
           <div class="modal_name flex">
@@ -901,10 +892,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/017_bergamo_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/017_bergamo_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/017_bergamo_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li><li class="modal_item flex">
           <div class="modal_name flex">
@@ -914,10 +901,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/018_sharm_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/018_sharm_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/018_sharm_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li><li class="modal_item flex">
           <div class="modal_name flex">
@@ -927,10 +910,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/019_turin2_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/019_turin2_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/019_turin2_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li><li class="modal_item flex">
           <div class="modal_name flex">
@@ -940,10 +919,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/020_juliyan_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/020_juliyan_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/020_juliyan_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li><li class="modal_item flex">
           <div class="modal_name flex">
@@ -953,10 +928,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/021_penelopa_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/021_penelopa_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/021_penelopa_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li><li class="modal_item flex">
           <div class="modal_name flex">
@@ -966,10 +937,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/022_kalyari_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/022_kalyari_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/022_kalyari_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -980,10 +947,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/023_leon_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/023_leon_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/023_leon_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li>
       </ul>
@@ -997,10 +960,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/024_kassiopeya_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/024_kassiopeya_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/024_kassiopeya_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li>
           <li class="modal_item flex">
@@ -1011,10 +970,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/025_martin_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/025_martin_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/025_martin_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -1025,10 +980,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/026_lion_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/026_lion_2.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/026_lion_3.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -1039,10 +990,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/027_duglas_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/027_duglas_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/027_duglas_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -1053,10 +1000,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/028_barnyi_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/028_barnyi_3.jpg" alt="" class="modal_picture__small">
-            <img src="./img/modal/028_barnyi_4.jpg" alt="" class="modal_picture__small modal_picture__small-bottom">
-          </div>
         </div>
         </li>
       </ul>
@@ -1070,9 +1013,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/029_irin_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/029_irin_4.jpg" alt="" class="modal_picture__small">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -1083,9 +1023,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/030_comfort_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/030_comfort_4.jpg" alt="" class="modal_picture__small">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -1096,9 +1033,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/031_paris_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/031_paris_4.jpg" alt="" class="modal_picture__small">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -1109,9 +1043,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/032_fenix3.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/032_fenix_1.jpg" alt="" class="modal_picture__small">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -1122,9 +1053,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/033_lite_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/033_lite_2.jpg" alt="" class="modal_picture__small">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -1145,9 +1073,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/035_alier120_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/035_alier120_2.jpg" alt="" class="modal_picture__small">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -1158,9 +1083,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/036_verona_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/036_verona_2.jpg" alt="" class="modal_picture__small">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -1171,9 +1093,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/037_unknown_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/037_unknown2_2.jpg" alt="" class="modal_picture__small">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -1204,9 +1123,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/040_gloster_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/040_gloster_2.jpg" alt="" class="modal_picture__small">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -1257,9 +1173,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/042_tango_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/042_tango_2.jpg" alt="" class="modal_picture__small">
-          </div>
         </div>
         </li><li class="modal_item flex">
           <div class="modal_name flex">
@@ -1269,9 +1182,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/043_prada_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/043_prada_2.jpg" alt="" class="modal_picture__small">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -1282,9 +1192,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/044_keralita_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/044_keralita_2.jpg" alt="" class="modal_picture__small">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">
@@ -1295,9 +1202,6 @@
           </div>
           <div class="modal_picture flex">
           <img src="./img/modal/045_alier_1.jpg" alt="" class="modal_picture">
-           <div class="modal_item__small flex">
-            <img src="./img/modal/045_alier_2.jpg" alt="" class="modal_picture__small">
-          </div>
         </div>
         </li>
         <li class="modal_item flex">

@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
 
 
-const prize = document.querySelector('.hero__button--prise');
+const prize = document.querySelector('.hero__button');
 const close = document.querySelector('.modal_close');
 const overlay = document.querySelector('.overlay');
 const modalWindow = document.querySelector('.modal_window');
@@ -40,11 +40,12 @@ function toLearnMore(event){
 // hamburger
 
 const hamburger = document.querySelector('.hamburger');
-const navList = document.querySelector('.header__nav-list');
+const navList = document.querySelector('.header__nav');
 const linkMenu = Array.from(document.querySelectorAll('.header__nav-item'));
 const toggle = () => {
   navList.classList.toggle('nav-open');
   hamburger.classList.toggle('open');
+  hamburger.classList.toggle('hamburger-open');
   for (let i = 0; i < linkMenu.length; i++) {
    linkMenu[i].addEventListener('click', toggle)
   };
